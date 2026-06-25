@@ -18,7 +18,6 @@ interface UtilityBrowserProps {
 
 const SORT_OPTIONS: { value: UtilitySortOption; label: string }[] = [
   { value: "default", label: "기본 순서" },
-  { value: "status", label: "사용 가능 우선" },
   { value: "name-asc", label: "이름 가나다순" },
   { value: "name-desc", label: "이름 역순" },
 ];

@@ -1,5 +1,3 @@
-export type UtilityStatus = "live" | "coming-soon";
-
 export interface Utility {
   id: string;
   name: string;
@@ -9,7 +7,6 @@ export interface Utility {
   tags: string[];
   category: string;
   developer: string;
-  status: UtilityStatus;
 }
 
 export const utilities: Utility[] = [
@@ -26,8 +23,6 @@ export const utilities: Utility[] = [
     href: "https://seesign-chat.vercel.app/",
     tags: ["Excel", "AI", "Q&A", "커뮤니티"],
     category: "데이터 분석",
-    developer: "디지털대성",
-    status: "live",
+    developer: "심준혁",
   },
-  
 ];

@@ -1,6 +1,6 @@
 import type { Utility } from "@/data/utilities";
 
-export type UtilitySortOption = "default" | "name-asc" | "name-desc" | "status";
+export type UtilitySortOption = "default" | "name-asc" | "name-desc";
 
 export interface UtilityFilters {
   category: string;
@@ -67,13 +67,6 @@ export function sortUtilities(
       return sorted.sort((a, b) => a.name.localeCompare(b.name, "ko"));
     case "name-desc":
       return sorted.sort((a, b) => b.name.localeCompare(a.name, "ko"));
-    case "status":
-      return sorted.sort((a, b) => {
-        if (a.status === b.status) {
-          return a.name.localeCompare(b.name, "ko");
-        }
-        return a.status === "live" ? -1 : 1;
-      });
     default:
       return sorted;
   }
