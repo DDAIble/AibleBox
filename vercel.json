@@ -1,0 +1,12 @@
+{
+  "rewrites": [
+    {
+      "source": "/chat",
+      "destination": "https://seesign-chat.vercel.app/chat"
+    },
+    {
+      "source": "/chat/:path*",
+      "destination": "https://seesign-chat.vercel.app/chat/:path*"
+    }
+  ]
+}
