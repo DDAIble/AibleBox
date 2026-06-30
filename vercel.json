@@ -10,11 +10,11 @@
     },
     {
       "source": "/admission",
-      "destination": "https://admission-parser.vercel.app/admission"
+      "destination": "https://admissions-extractor.vercel.app/admission"
     },
     {
       "source": "/admission/:path*",
-      "destination": "https://admission-parser.vercel.app/admission/:path*"
+      "destination": "https://admissions-extractor.vercel.app/admission/:path*"
     }
   ]
 }
