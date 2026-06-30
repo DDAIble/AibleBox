@@ -7,6 +7,14 @@
     {
       "source": "/chat/:path*",
       "destination": "https://seesign-chat.vercel.app/chat/:path*"
+    },
+    {
+      "source": "/admission",
+      "destination": "https://admission-parser.vercel.app/admission"
+    },
+    {
+      "source": "/admission/:path*",
+      "destination": "https://admission-parser.vercel.app/admission/:path*"
     }
   ]
 }

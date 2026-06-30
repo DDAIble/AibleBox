@@ -16,9 +16,12 @@ const nextConfig: NextConfig = {
     }
 
     const chatOrigin = process.env.EXCEL_AI_CHAT_DEV_URL ?? "http://localhost:3001";
+    const admissionOrigin = process.env.ADMISSION_DEV_URL ?? "http://localhost:3002";
     return [
       { source: "/chat", destination: `${chatOrigin}/chat` },
       { source: "/chat/:path*", destination: `${chatOrigin}/chat/:path*` },
+      { source: "/admission", destination: `${admissionOrigin}/admission` },
+      { source: "/admission/:path*", destination: `${admissionOrigin}/admission/:path*` },
     ];
   },
 };

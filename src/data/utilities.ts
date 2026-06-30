@@ -25,4 +25,19 @@ export const utilities: Utility[] = [
     category: "데이터 분석",
     developer: "심준혁",
   },
+  {
+    id: "admission-parser",
+    name: "모집요강 학과 추출기",
+    description: "대학 모집요강 PDF에서 전형별 학과리스트를 추출",
+    features: [
+      "PDF 업로드 → 표 데이터 추출",
+      "전형별 학과·모집인원 구조화",
+      "전형 선택 → 학과 리스트 표 확인",
+      "JSON·Excel·Markdown 원하는 형태로 다운로드",
+    ],
+    href: process.env.NEXT_PUBLIC_ADMISSION_URL ?? "/admission/",
+    tags: ["입시", "PDF", "추출", "Excel"],
+    category: "데이터 분석",
+    developer: "심준혁",
+  },
 ];
