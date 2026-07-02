@@ -20,9 +20,7 @@ export const utilities: Utility[] = [
       "Q&A 핫스팟·교재 구간 분석",
       "답변 PDF 다운로드·텍스트 복사",
     ],
-    href:
-      process.env.NEXT_PUBLIC_EXCEL_AI_CHAT_URL ??
-      "https://excel-ai-chat-364392170079.asia-northeast3.run.app/chat",
+    href: process.env.NEXT_PUBLIC_EXCEL_AI_CHAT_URL ?? "/chat/",
     tags: ["Excel", "AI", "Q&A", "커뮤니티"],
     category: "데이터 분석",
     developer: "심준혁",

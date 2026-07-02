@@ -2,11 +2,11 @@
   "rewrites": [
     {
       "source": "/chat",
-      "destination": "https://seesign-chat.vercel.app/chat"
+      "destination": "https://excel-ai-chat-364392170079.asia-northeast3.run.app/chat"
     },
     {
       "source": "/chat/:path*",
-      "destination": "https://seesign-chat.vercel.app/chat/:path*"
+      "destination": "https://excel-ai-chat-364392170079.asia-northeast3.run.app/chat/:path*"
     },
     {
       "source": "/admission",
